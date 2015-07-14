@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,400italic,500|Roboto+Condensed' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.2.0/flexboxgrid.min.css" type="text/css" >
   <link rel="stylesheet" href="css/bigfoot-number.css">
 
   <!--[if lt IE 9]>
@@ -21,7 +22,7 @@
   <!-- 
    - image should be devpost logo with stays fixed to header and links back to devpost.com
   -->
-  <img src="#devpost logo left aligned">
+  <a href="http://devpost.com"><img src="/img/devpost-logo.svg" class="head_logo"></a>
 
   <h1>Devpost Student Hacker Report</h1>
   <h2>Technology &amp; API rankings for the 2014-2015 academic year</h2>
@@ -57,6 +58,12 @@
   
   <h4 class="rank_head">Mobile platforms</h4>
   <p>% of users who said they like to hack on a given platform:<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
+  <!-- 
+    do a bar chart / table?: 
+    - android - 38.2%
+    - ios - 22.7%
+    - windows-phone 4.9%
+  -->
   
   <h4 class="rank_head">Programming languages</h4>
   <ol>
@@ -95,6 +102,32 @@
 	<li>Haskell</li>
 	<li>TypeScript</li>
   </ol>
+  
+  
+  <!-- 
+   
+   i heard you liked grids, so i put some grids in your grids
+   docs @ http://flexboxgrid.com/
+  
+  -->
+  
+  <div class="row">
+	  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-4">
+		  <div class="box-row">a
+		  </div>
+	  </div>
+	  <div class="col-xs-12 col-sm-6 col-md-8 col-lg-4">
+		  <div class="box-row">b
+		  </div>
+	  </div>
+	  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-4">
+		  <div class="box-row">c
+		  </div>
+	  </div>
+  </div>
+  
+  
+  
   
   <h4 class="rank_head">Communications APIs</h4>
   <ol>
@@ -267,7 +300,7 @@
     <li></li>
   </ol>
   
-  <h4 class="rank_head">Text editors</h4>
+  <h4 class="rank_head">Miscellaneous APIs &amp; tech</h4>
   <p>Not all of the tags used by student hackers fit in a particular category or have many peers. Here are a few more technologies that were tagged in multiple hacks:</p>
   <ul>
     <li></li>
@@ -393,6 +426,12 @@
       </li>
     </ol>
   </div>
+
+  <!-- 
+  
+  We need a footer
+  
+  -->
 
   <!-- JaVAVAVAVAVaScript -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
