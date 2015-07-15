@@ -17,43 +17,42 @@ TYPOGRAPHY
 body {
   font-family: 'Helvetica Neue', sans-serif;
   color: #575553;
+  line-height: 1.5625;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
   color: #003e54;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   font-size: 2.375em; /*38px*/
-  line-height: 3.125em; /*50px*/
+  line-height: 1.4;
+  margin-bottom: 0.2em;
 }
 
 h2 {
   font-size: 1.875em; /*30px*/
-  line-height: 2.5em; /*40px*/
 }
 
 h3 {
   font-size: 1.375em; /*22px*/
-  line-height: 1.875em; /*30px*/
 }
 
 h4 {
   font-size: 1.125em; /*18px*/
-  line-height: 1.5625em; /*25px*/
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.075em;
 }
 
 h5 {
   font-size: 1.125em; /*18px*/
-  line-height: 1.5625em; /*25px*/
 }
 
 p, ol, ul {
   font-size: 1em; /*16px*/
-  line-height: 1.5625em; /*25px*/
 }
 
 a {
@@ -64,6 +63,29 @@ a:active, a:hover {
   color: #247f8f;
 }
 
-img.head_logo {
-  height:40px;
+/* ---------------------
+HEADER
+--------------------- */
+
+.header {
+  background: #247f8f url('../img/hacker-report-header.jpg') no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  padding: 3em;
+}
+
+.header h1, 
+.header h2 {
+  color: white;
+}
+
+.header h2 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.header img {
+  height: 38px;
+  margin-bottom: 0.7em;
 }

@@ -7,9 +7,11 @@
   <meta name="description" content="Devpost Student Hacker Report (2014-15)">
   <meta name="author" content="Neal Shyam, Peter Robinson, Holly Tiwari, Devpost">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.2.0/flexboxgrid.min.css" type="text/css" >
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css"><!-- only loading the foundation grid -->
   <link rel="stylesheet" href="css/bigfoot-number.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,14 +19,18 @@
 </head>
 
 <body>
-
-  <!-- 
-   - image should be devpost logo with stays fixed to header and links back to devpost.com
-  -->
-  <a href="http://devpost.com"><img src="/img/devpost-logo.svg" class="head_logo"></a>
-
-  <h1>Devpost Student Hacker Report</h1>
-  <h2>Technology &amp; API rankings for the 2014-2015 academic year</h2>
+  
+  <section class="header">
+    <a href="http://devpost.com"><img src="/img/devpost-reversed2-rgb.svg"></a>
+    <h1>Student Hacker Report</h1>
+    <h2>Technology &amp; API rankings for the 2014&ndash;2015 academic year</h2>
+  </section>
+  
+  
+  <div class="row" style="background-color: green;">
+    <div class="large-3 columns" style="background-color: red;">left column</div>
+    <div class="large-9 columns" style="background-color: blue;">right column</div>
+  </div>
   
   
   <!-- 
