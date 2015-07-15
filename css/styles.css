@@ -1,22 +1,69 @@
-body{
-  width:80%;margin:auto;
-  font-family: 'Roboto', sans-serif;
-  color: #111111;
-  margin-top:1em;
+@font-face {
+  font-family: 'ClearSans-Bold';
+  src: url('fonts/ClearSans-Bold.eot');
+  src: url('fonts/ClearSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ClearSans-Bold.woff') format('woff'),
+       url('fonts/ClearSans-Bold.ttf') format('truetype'),
+       url('fonts/ClearSans-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ---------------------
+TYPOGRAPHY
+--------------------- */
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #575553;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
+  color: #003e54;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
+h1 {
+  font-size: 2.375em; /*38px*/
+  line-height: 3.125em; /*50px*/
 }
 
-a {color: #0074D9;}
-a:active, a:hover {color: #B10DC9;}
-/*a:visited {color: #85144B;}*/
+h2 {
+  font-size: 1.875em; /*30px*/
+  line-height: 2.5em; /*40px*/
+}
+
+h3 {
+  font-size: 1.375em; /*22px*/
+  line-height: 1.875em; /*30px*/
+}
+
+h4 {
+  font-size: 1.125em; /*18px*/
+  line-height: 1.5625em; /*25px*/
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+h5 {
+  font-size: 1.125em; /*18px*/
+  line-height: 1.5625em; /*25px*/
+}
+
+p, ol, ul {
+  font-size: 1em; /*16px*/
+  line-height: 1.5625em; /*25px*/
+}
+
+a {
+  color: #30acc2;
+}
+
+a:active, a:hover {
+  color: #247f8f;
+}
 
 img.head_logo {
- height:40px;
+  height:40px;
 }
