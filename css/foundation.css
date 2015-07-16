@@ -1147,3 +1147,16 @@ select {
     position: relative;
     right: 91.66667%;
     left: auto; } }
+
+[data-magellan-expedition], 
+[data-magellan-expedition-clone] {
+  min-width: 100%;
+  padding: 10px;
+  z-index: 50; }
+
+  [data-magellan-expedition] .sub-nav, [data-magellan-expedition-clone] .sub-nav {
+    margin-bottom: 0; }
+    [data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
+      margin-bottom: 0; }
+    [data-magellan-expedition] .sub-nav a, [data-magellan-expedition-clone] .sub-nav a {
+      line-height: 1.8em; }

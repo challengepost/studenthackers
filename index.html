@@ -8,9 +8,11 @@
   <meta name="author" content="Neal Shyam, Peter Robinson, Holly Tiwari, Devpost">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/foundation.min.css"><!-- only loading the foundation grid -->
+  <link rel="stylesheet" href="css/foundation.min.css"><!-- only loading the grid and magellan nav -->
   <link rel="stylesheet" href="css/bigfoot-number.css">
   <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/vendor/modernizr.js"></script>
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,22 +22,40 @@
 <body>
   
   <section class="header">
-    <a href="http://devpost.com"><img src="/img/devpost-reversed-rgb.svg"></a>
-    <h1>Student Hacker Report</h1>
-    <h2>Technology &amp; API rankings for the 2014&ndash;2015 academic year</h2>
+    <div class="row">
+      <div class="large-12 columns">
+        <a href="http://devpost.com"><img src="/img/devpost-reversed-rgb.svg"></a>
+        <h1>Student Hacker Report</h1>
+        <h2>Technology &amp; API rankings for the 2014&ndash;2015 academic year</h2>
+      </div>  
+    </div>
   </section>
+
+  
   
   <section class="content">
     <div class="row">
+
       <div class="large-3 columns">
-        table of contents / nav goes here
+        <div data-magellan-expedition="fixed">
+          <dl class="sub-nav">
+            <dd data-magellan-arrival="about"><a href="#about">About Devpost</a></dd>
+            <dd data-magellan-arrival="students"><a href="#students">Student hackers</a></dd>
+            <dd data-magellan-arrival="method"><a href="#method">Ranking methodology</a></dd>
+            <dd data-magellan-arrival="rankings"><a href="#rankings">Technology &amp; API rankings</a></dd>
+          </dl>
+        </div>
         <!-- 
         - Table of Contents - jquery + jquery UI 
         - http://gregfranko.com/jquery.tocify.js/
         -->
       </div>
+
       <div class="large-9 columns">
-        <h3 id="about" class="section_head">About Devpost</h3>
+        
+        <h2 data-magellan-destination="about">About Devpost</h2>
+        <a name="about"></a>
+        
         <p><a href="http://devpost.com">Devpost</a>, (formerly ChallengePost), is the home for hackers, a community where developers can share their software projects, build their portfolios, and compete in online and in-person hackathons.</p>
 
         <p>We think of hackers as software developers who are <a href="https://en.wikipedia.org/wiki/Hacker_(programmer_subculture)">experimenters, tinkerers, and lifelong learners</a>, not the malicious actors responsible for data breaches, theft, and similiar unsavory behavior.</p>
@@ -44,33 +64,55 @@
         
         
         
-        <h3 id="students" class="section_head">Student hackers</h3>
+        
+        <h2 data-magellan-destination="students">Student hackers</h2>
+        <a name="students"></a>
+
         <p>Devpost's digital infrastructure is used at student hackathons around the world and leading engineering schools in the U.S.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> As a result, student hackers have a big presence in our community. Whether in high school or college, novice or veteran, they are at the forefront of software (and often hardware) innovation, showing equal interest in both academic and consumer oriented endeavors.</p>
         
         
         
-        <h3 id="methodology" class="section_head">Ranking methodology</h3>
+        <h2 data-magellan-destination="method">Ranking methodology</h2>
+        <a name="method"></a>
+
+
         <p>During hackathons and within their portfolios, we encourage hackers to tag the platforms, technologies, languages, and APIs they use. This helps us capture a lot of data on the developer community.</p>
 
         <p>We looked at project tags from a sample of 13,281 student hackers who participated in 160 student hackathons and submitted 9,898 projects, either in hackathons or on their Devpost portfolios.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
 
         <p>The technologies tagged in student projects include languages, communications APIs, social APIs, payment APIs, geo APIs, music APIs, application frameworks, databases, frontend frameworks, game engines, IDEs, libraries, backend as a service (BaaS), platform as a service (PaaS), infrastructure as a Service (IaaS), protocols, text editors, hardware, and more. For each ranking category, we report the top 5 tags.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
 
+
         
-        <!-- 
-        - ALL THE RANKINGS
-        - So yeah, how are we making this look good?
-        -->
-        <h3 id="rankings" class="section_head">Technology & API rankings</h3>
+        <h2 data-magellan-destination="rankings">Technology &amp; API rankings</h2>
+        <a name="rankings"></a>
         
-        <h4 class="rank_head">Mobile platforms</h4>
+        <h4>Mobile platforms</h4>
+
         <p>% of users who said they like to hack on a given platform:<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
-        <!-- 
-          do a bar chart / table?: 
-          - android - 38.2%
-          - ios - 22.7%
-          - windows-phone 4.9%
-        -->
+        <table>
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th>% of total users</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Android</td>
+              <td>38.2%</td>
+            </tr>
+            <tr>
+              <td>iOS</td>
+              <td>22.7%</td>
+            </tr>
+            <tr>
+              <td>Windows Phone</td>
+              <td>4.9%</td>
+            </tr>
+
+          </tbody>
+        </table>
         
         <h4 class="rank_head">Programming languages</h4>
         <ol>
@@ -436,11 +478,6 @@
     </div>
   </section>
   
-  
-  
-  
-  
-  
 
   <!-- 
   
@@ -449,8 +486,25 @@
   -->
 
   <!-- JaVAVAVAVAVaScript -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(function() {
+      $(document).foundation();
+
+      $(document).foundation({
+        "magellan-expedition": {
+          active_class: 'active', // specify the class used for active sections
+          threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
+          destination_threshold: -100, // pixels from the top of destination for it to be considered active
+          throttle_delay: 50, // calculation throttling to increase framerate
+          fixed_top: 0, // top distance in pixels assigend to the fixed element on scroll
+          offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
+        }
+        });
+    });
+  </script>
+
   <script src="js/bigfoot.min.js"></script>
   <script src="js/main.js"></script>
 </body>
