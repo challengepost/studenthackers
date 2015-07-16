@@ -57,10 +57,15 @@ p, ol, ul {
 
 a {
   color: #30acc2;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
 }
 
 a:active, a:hover {
   color: #247f8f;
+  border-bottom: 1px solid #247f8f;
 }
 
 /* ---------------------
@@ -88,4 +93,12 @@ HEADER
 .header img {
   height: 38px;
   margin-bottom: 0.7em;
+}
+
+/* ---------------------
+MAIN CONTENT
+--------------------- */
+
+.content {
+  padding: 3em 0; 
 }
