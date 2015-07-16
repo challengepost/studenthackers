@@ -44,6 +44,13 @@ h2:first-of-type {
 
 h3 {
   font-size: 1.375em; /*22px*/
+  margin-bottom: 0.3em;
+  margin-top: 2em;
+}
+
+h3.border {
+  padding-bottom: 0.4em;
+  border-bottom: 3px solid #e6e6e6;
 }
 
 h4 {
@@ -72,6 +79,10 @@ a {
 a:active, a:hover {
   color: #207180;
   border-bottom: 1px solid #207180;
+}
+
+.no-margin-top {
+  margin-top: 0;
 }
 
 /* ---------------------
@@ -149,6 +160,33 @@ SIDE NAV
   color: #003e54;
   border-bottom: none;
 }
+
+/* ---------------------
+TABLES
+--------------------- */
+
+table {
+  text-align: left;
+  width: 100%
+}
+
+thead {
+  color: #1a1918;
+  font-weight: bold;
+}
+
+thead th {
+  border-bottom: 3px solid #e6e6e6;
+}
+
+td, th {
+  padding: 0.4em 0; 
+}
+
+/*tbody tr {
+  border-bottom: 1px solid #e6e6e6
+}*/
+
 
 
 /* ---------------------
