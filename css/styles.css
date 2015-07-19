@@ -136,6 +136,10 @@ MAIN CONTENT
   text-align: center;
 }
 
+.insight-box p.icon img {
+  height: 60px;
+}
+
 
 /* ---------------------
 SIDE NAV
