@@ -121,6 +121,21 @@ MAIN CONTENT
   padding: 3em 0; 
 }
 
+.insight-box {
+  border: 3px solid #e6e6e6;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.insight-box p {
+  margin-bottom: 0;
+}
+
+.insight-box p.icon {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
 
 /* ---------------------
 SIDE NAV
