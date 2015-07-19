@@ -10,10 +10,11 @@
   border: none;
   border-radius: 0.3em;
   cursor: pointer;
-  background-color: rgba(110, 110, 110, 0.2);
+  background-color: #e6e6e6;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  font-size: 1rem;
+  font-size: 20px;
+  color: #575553;
   line-height: 0;
   vertical-align: middle;
   text-decoration: none;
@@ -81,7 +82,7 @@
   background: #fafafa;
   opacity: 0;
   border-radius: 0.5em;
-  border: 1px solid #c3c3c3;
+  border: 1px solid #c7c6c5;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   line-height: 0;
   -webkit-transition-property: opacity, -webkit-transform;
@@ -197,7 +198,7 @@
   box-sizing: inherit;
   overflow: hidden;
   margin: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
   border-radius: 0.5em;
   line-height: 0;
 }
@@ -207,15 +208,26 @@
   z-index: 8;
   display: inline-block;
   max-height: 15em;
-  padding: 1.1em 1.3em 1.2em;
+  padding: 1em;
   box-sizing: inherit;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  background: #fafafa;
+  background: #f0f0f0;
   border-radius: 0.5em;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: normal;
 }
+
+.bigfoot-footnote__content p {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #575553;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+
 .bigfoot-footnote__content img {
   max-width: 100%;
 }
@@ -236,8 +248,8 @@
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: #fafafa;
-  border: 1px solid #c3c3c3;
+  background: #f0f0f0;
+  border: 1px solid #c7c6c5;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   border-top-left-radius: 0;
 }
@@ -251,7 +263,7 @@
 .bigfoot-footnote__button {
   position: relative;
   height: 0.95em;
-  width: 1.5em;
+  width: 1em;
   border-radius: 0.475em;
 }
 .bigfoot-footnote__button:after {
