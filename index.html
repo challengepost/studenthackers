@@ -25,7 +25,7 @@
   <section class="header">
     <div class="row">
       <div class="large-12 columns">
-        <a href="http://devpost.com"><img src="/img/devpost-reversed-rgb.svg"></a>
+        <a href="http://devpost.com" class="logo"><img src="/img/devpost-reversed-rgb.svg"></a>
         <h1>Student Hacker Report</h1>
         <h2>Technology &amp; API rankings for the 2014&ndash;2015 academic year</h2>
       </div>  
@@ -33,11 +33,10 @@
   </section>
 
   
-  
   <section class="content">
     <div class="row">
 
-      <div class="large-3 columns">
+      <div class="large-3 columns show-for-large-up">
         <div data-magellan-expedition="fixed">
           <dl class="sub-nav">
             <dd data-magellan-arrival="about"><a href="#about">About Devpost</a></dd>
@@ -45,15 +44,10 @@
             <dd data-magellan-arrival="method"><a href="#method">Ranking methodology</a></dd>
             <dd data-magellan-arrival="rankings"><a href="#rankings">Technology &amp; API rankings</a>
             <dd data-magellan-arrival="insights"><a href="#insights">Insights</a>
-            <dd data-magellan-arrival="forward"><a href="#forward">Looking forward</a>
-            </dd>
+            <dd data-magellan-arrival="forward"><a href="#forward">Looking forward</a></dd>
           </dl>
         </div>
-        <!-- 
-        - Table of Contents - jquery + jquery UI 
-        - http://gregfranko.com/jquery.tocify.js/
-        -->
-      </div>
+      </div> <!-- end left sidenav column (large-3) -->
 
       <div class="large-9 columns">
         
@@ -1168,9 +1162,6 @@
           </div>
         </div> <!-- end row -->
 
-          
-        <p>If you want to learn more about what hackers are doing with your technology and drive more engagement, contact us at <a href="mailto:post@devpost.com">post@devpost.com</a> or <a href="tel:+12126756164">212-675-6164</a> for a demo of our new organization tools.</p>
-        
         <div class="footnotes">
           <ol>
             <li class="footnote" id="fn:1">
@@ -1186,7 +1177,7 @@
               <p>Users are not exhaustive when they tag platforms and technologies so actual percentages may be higher.<a href="#fnref:4" title="return to article"> ↩</a><p>
             </li>
             <li class="footnote" id="fn:5">
-              <p>The line between PaaS & IaaS is blurry and user tags are not always specific enough to make a distinction. So, we offer a combined ranking of PaaS and IaaS technologies.<a href="#fnref:5" title="return to article"> ↩</a><p>
+              <p>The line between PaaS &amp; IaaS is blurry and user tags are not always specific enough to make a distinction. So, we offer a combined ranking of PaaS and IaaS technologies.<a href="#fnref:5" title="return to article"> ↩</a><p>
             </li>
             <li class="footnote" id="fn:6">
               <p>The mobile platform rankings are also consistent with other surveys of mind share. See, for example, VisionMobile’s Mobile Platform Mindshare rankings based on their survey of mobile app developers: <em>Developer Economics: State of the Developer Nation Q3 2014</em>.<a href="#fnref:6" title="return to article"> ↩</a><p>
@@ -1198,16 +1189,23 @@
         </div>
         <!-- end footnotes -->
 
-      </div>
-    </div>
+      </div> <!-- end right column (large-9) -->
+    </div> <!-- end row -->
   </section>
-  
+    
 
-  <!-- 
+  <footer>
+    <div class="row">
+      <div class="large-3 columns">
+        <a href="http://devpost.com" class="logo"><img src="/img/devpost-reversed2-rgb.svg"></a>
+      </div>
+      <div class="large-9 columns">
+        <p>If you want to learn more about what hackers are doing with your technology and drive more engagement, contact us at <a href="mailto:post@devpost.com">post@devpost.com</a> or <a href="tel:+12126756164">212-675-6164</a> for a demo of our new organization tools.</p>
+      </div>
+    </div> <!-- end row -->
+  </footer>
+
   
-  We need a footer
-  
-  -->
 
   <!-- JaVAVAVAVAVaScript -->
   <script src="js/vendor/jquery.js"></script>
@@ -1221,7 +1219,7 @@
         "magellan-expedition": {
           active_class: 'active', // specify the class used for active sections
           threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
-          destination_threshold: -100, // pixels from the top of destination for it to be considered active
+          destination_threshold: -150, // pixels from the top of destination for it to be considered active
           throttle_delay: 50, // calculation throttling to increase framerate
           fixed_top: 0, // top distance in pixels assigend to the fixed element on scroll
           offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
