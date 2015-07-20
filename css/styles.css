@@ -226,6 +226,10 @@ footer p {
   margin-bottom: 0;
 }
 
+footer img {
+    max-height: 55px;
+  }
+
 footer a {
   color: white;
   border-bottom: 1px solid white;
