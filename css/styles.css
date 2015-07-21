@@ -22,6 +22,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
+  font-weight: normal;
   color: #003e54;
   line-height: 1.4;
   margin: 0;
@@ -309,17 +310,12 @@ MOBILE
     margin-bottom: 2em;
   }
 
-  footer {
-    text-align: center;
+  .insight-box {
+    padding: 1em;
   }
 
-  footer img {
-    height: 30px;
-    margin-bottom: 1em;
-  }
-
-  footer p {
-    font-size: 16px;
+  .footer-interior {
+    padding: 1em;
   }
 
 }
