@@ -171,7 +171,7 @@ MAIN CONTENT
   margin-bottom: 2em;
 }
 
-.insight-box p {
+.insight-box p:last-of-type {
   margin-bottom: 0;
 }
 
