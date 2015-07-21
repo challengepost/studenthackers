@@ -168,10 +168,11 @@ a.hiring-button {
   border-width: 0 0 2px;
   font-size: 14px;
   padding: 0.5em 1em;
-  margin-left: 1.3em;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 a.hiring-button:focus, 
@@ -182,6 +183,17 @@ a.hiring-button:hover {
 
 a.hiring-button:active {
   border-width: 2px 0 0;
+}
+
+.contact {
+  margin: 2em 0;
+  background: #f0f0f0;
+  padding: 1.3em;
+  font-size: 14px;
+}
+
+.contact p {
+  margin-bottom: 0;
 }
 
 
@@ -245,33 +257,31 @@ td.number {
 
 
 /* ---------------------
-FOOTER
+FOOTER / SALES PITCH
 --------------------- */
 
-footer {
-  background: #2d9eb2;
-  padding: 2em 0;
+
+.footer-interior {
+  background: #003e54;
+  padding: 2em;
+  margin-bottom: 2em;
 }
 
-footer p {
+.footer-interior p {
   color: white;
-  font-size: 18px;
   margin-bottom: 0;
 }
 
-footer img {
-    max-height: 55px;
-  }
+.footer-interior a {
+  color: #baeef7;
+  border-bottom: 1px dotted #baeef7;
+}
 
-footer a {
+.footer-interior a:hover {
   color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 1px dotted white;
 }
 
-footer a:hover {
-  color: #1a5b66;
-  border-bottom: 1px solid #1a5b66;
-}
 
 /* ---------------------
 MOBILE
@@ -289,6 +299,10 @@ MOBILE
   .header,
   .content {
     padding: 2em 0;
+  }
+
+  td, th {
+    padding: 0.2em 0; 
   }
 
   .insight-box.stacked {
