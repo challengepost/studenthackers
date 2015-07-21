@@ -129,7 +129,10 @@ SIDE NAV
   padding-top: 0.5em;
 }
 
-.sub-nav, 
+[data-magellan-expedition] .sub-nav {
+  margin: 0 0 1.75em 0;
+}
+
 .sub-nav dd {
   margin: 0;
 }
@@ -155,6 +158,32 @@ SIDE NAV
   color: #003e54;
   border-bottom: none;
 }
+
+a.hiring-button {
+  font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
+  color: white;
+  background: #2d9eb2;
+  border-color: #237a89;
+  border-style: solid;
+  border-width: 0 0 2px;
+  font-size: 14px;
+  padding: 0.5em 1em;
+  margin-left: 1.3em;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+a.hiring-button:focus, 
+a.hiring-button:hover {
+  background: #268899;
+  border-color: #1a5b66;
+}
+
+a.hiring-button:active {
+  border-width: 2px 0 0;
+}
+
 
 
 /* ---------------------
@@ -182,6 +211,10 @@ MAIN CONTENT
 
 .insight-box p.icon img {
   height: 50px;
+}
+
+.insight-box.stacked {
+  margin-bottom: 0;
 }
 
 /* ---------------------
@@ -256,6 +289,10 @@ MOBILE
   .header,
   .content {
     padding: 2em 0;
+  }
+
+  .insight-box.stacked {
+    margin-bottom: 2em;
   }
 
   footer {
