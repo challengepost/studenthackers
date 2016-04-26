@@ -17,7 +17,8 @@ TYPOGRAPHY
 body {
   font-family: 'Helvetica Neue', sans-serif;
   color: #575553;
-  line-height: 1.5625;
+  font-size: 1.125em;
+  line-height: 2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,7 +46,7 @@ h2:first-of-type {
 
 h3 {
   font-size: 1.375em; /*22px*/
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
   margin-top: 2em;
 }
 
@@ -65,8 +66,34 @@ h5 {
 }
 
 p, ol, ul {
-  font-size: 1em; /*16px*/
   margin: 0 0 1em 0;
+}
+
+ol, ul {
+  counter-reset: item;
+  padding: 0 0 0 1.125em;
+}
+
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: #003e54;
+  font-weight: bold;
+  margin-right: 0.2em;
+}
+
+ul li:before {
+  content: "● ";
+  counter-increment: item;
+  color: #003e54;
+  font-weight: bold;
+  margin-right: 0.2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  color: #575553;
+  display: block;
 }
 
 a {
@@ -97,7 +124,7 @@ HEADER
   padding: 3em 0;
 }
 
-.header h1, 
+.header h1,
 .header h2 {
   color: white;
 }
@@ -122,7 +149,7 @@ a.logo {
 SIDE NAV
 --------------------- */
 
-[data-magellan-expedition], 
+[data-magellan-expedition],
 [data-magellan-expedition-clone] {
   width: 250px;
   padding: 0;
@@ -154,7 +181,7 @@ SIDE NAV
   color: #003e54;
 }
 
-.sub-nav dd a:active, 
+.sub-nav dd a:active,
 .sub-nav dd a:hover {
   color: #003e54;
   border-bottom: none;
@@ -176,7 +203,7 @@ a.hiring-button {
   text-align: center;
 }
 
-a.hiring-button:focus, 
+a.hiring-button:focus,
 a.hiring-button:hover {
   background: #268899;
   border-color: #1a5b66;
@@ -204,7 +231,7 @@ MAIN CONTENT
 --------------------- */
 
 .content {
-  padding: 3em 0; 
+  padding: 3em 0;
 }
 
 .insight-box {
@@ -249,7 +276,7 @@ thead th {
 }
 
 td, th {
-  padding: 0.4em 0; 
+  padding: 0.4em 0;
 }
 
 td.number {
@@ -288,7 +315,7 @@ FOOTER / SALES PITCH
 MOBILE
 --------------------- */
 @media (max-width: 768px) {
-  
+
   h1 {
     font-size: 1.875em; /*30px*/
   }
@@ -303,7 +330,7 @@ MOBILE
   }
 
   td, th {
-    padding: 0.2em 0; 
+    padding: 0.2em 0;
   }
 
   .insight-box.stacked {
