@@ -11,6 +11,53 @@
 
 
 /* ---------------------
+SHARE BUTTONS
+--------------------- */
+
+.share-button{
+  border-radius:4px;
+  display:inline-block;
+  color: #FFF;
+  font-size: 14px;
+  padding: 1px 8px 1px 6px;
+}
+
+a.share-button{
+  color: #FFF;
+}
+
+a.share-button:hover{
+  color: #FFF;
+}
+
+.twitter{
+  background-color:#1b95e0;
+}
+
+.twitter:hover{
+  background-color: #146fa8;
+
+}
+
+.linkedin{
+  background-color:#0077B5;
+}
+
+.linkedin:hover{
+  background-color: #005987;
+
+}
+
+.hn{
+  background-color: #ff8937;
+}
+
+.hn:hover{
+  background-color: #e85f00;
+
+}
+
+/* ---------------------
 TYPOGRAPHY
 --------------------- */
 
@@ -316,6 +363,10 @@ MOBILE
 --------------------- */
 @media (max-width: 768px) {
 
+
+  .hide-mobile{
+    display:none;
+  }
   h1 {
     font-size: 1.875em; /*30px*/
   }
