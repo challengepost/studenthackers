@@ -19,7 +19,7 @@ SHARE BUTTONS
   display:inline-block;
   color: #FFF;
   font-size: 14px;
-  padding: 1px 8px 1px 6px;
+  padding: 2px 10px;
 }
 
 a.share-button{
@@ -36,7 +36,6 @@ a.share-button:hover{
 
 .twitter:hover{
   background-color: #146fa8;
-
 }
 
 .linkedin{
@@ -45,7 +44,6 @@ a.share-button:hover{
 
 .linkedin:hover{
   background-color: #005987;
-
 }
 
 .hn{
@@ -54,7 +52,15 @@ a.share-button:hover{
 
 .hn:hover{
   background-color: #e85f00;
+}
 
+.new-report{
+  background: #2d9eb2;
+  border-color: #237a89;
+}
+
+.new-report:hover{
+  background-color: #268899;
 }
 
 /* ---------------------
@@ -158,6 +164,19 @@ a:active, a:hover {
 
 .no-margin-top {
   margin-top: 0;
+}
+
+strong{
+  color: #003e54;
+}
+
+.percent-rank p{
+  margin-bottom: 0.5em;
+  padding: 0 0 0 1.125em;
+}
+
+.percent-rank p strong{
+  margin-right: .25em;
 }
 
 /* ---------------------
@@ -331,6 +350,10 @@ td.number {
 }
 
 
+
+
+
+
 /* ---------------------
 FOOTER / SALES PITCH
 --------------------- */
@@ -363,16 +386,28 @@ MOBILE
 --------------------- */
 @media (max-width: 768px) {
 
+  body{
+    font-size: 1em;
+    line-height: 1.7;
+  }
 
   .hide-mobile{
     display:none;
   }
   h1 {
-    font-size: 1.875em; /*30px*/
+    font-size: 1.6em; /*30px*/
   }
 
   .header h2 {
     font-size: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 
   .header,
