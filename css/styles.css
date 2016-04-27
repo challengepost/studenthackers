@@ -308,7 +308,15 @@ MAIN CONTENT
 --------------------- */
 
 .content {
-  padding: 3em 0;
+  padding: 3em 0 0;
+}
+
+.cta-button{
+  margin-bottom: 1.75em;
+}
+
+.bottom {
+  margin-bottom:0;
 }
 
 .insight-box {
