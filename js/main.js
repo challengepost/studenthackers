@@ -9,8 +9,9 @@ var ch3 = document.getElementById("equity_chart");
 
 Chart.defaults.global.responsive = true;
 Chart.defaults.global.hover.mode = "";
+Chart.defaults.global.maintainAspectRatio = true;
 
-Chart.defaults.global.title.display=true;
+Chart.defaults.global.title.display=false;
 Chart.defaults.global.title.position="top";
 Chart.defaults.global.title.fontColor = "#003e54";
 Chart.defaults.global.title.fontFamily = "'Helvetica Neue', sans-serif";

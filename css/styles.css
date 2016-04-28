@@ -398,6 +398,15 @@ FOOTER / SALES PITCH
   border-bottom: 1px dotted white;
 }
 
+.barchart{
+  max-width: 500px !important;
+  /*max-height: 350px !important;*/
+}
+.piechart{
+  /*width: 400px;
+  height: 300px;*/
+}
+
 
 /* ---------------------
 MOBILE
@@ -412,7 +421,7 @@ MOBILE
   .hide-mobile{
     display:none;
   }
-  
+
   h1 {
     font-size: 1.6em; /*30px*/
   }
@@ -453,6 +462,15 @@ MOBILE
 
   .footer-interior {
     padding: 1em;
+  }
+
+  .barchart{
+    width: 400px;
+    height: 250px;
+  }
+  .piechart{
+    width: 300px;
+    height: 200px;
   }
 
 }
