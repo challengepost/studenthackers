@@ -132,7 +132,7 @@ ol, ul {
 ol li:before {
   content: counter(item) ". ";
   counter-increment: item;
-  color: #77ad39;
+  color: #669431;
   font-weight: bold;
   margin-right: 0.2em;
   margin-left: -1.35em;
@@ -141,7 +141,7 @@ ol li:before {
 ul li:before {
   content: "● ";
   counter-increment: item;
-  color: #77ad39;
+  color: #669431;
   font-weight: bold;
   margin-right: 0.2em;
   margin-left: -1.35em;
@@ -191,14 +191,18 @@ strong{
 }
 
 
-.big-number {
+span.big-number {
   font-size: 32px;
   font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
   font-weight: normal;
-  color: #77ad39;
-  line-height: 1.4;
+  color: #669431;
+  line-height: 1.25;
   padding-right: 0.1em;
 }
+
+span.big-number.padding-both-sides {
+    padding: 0 0.1em 0 0.1em;
+  }
 
 
 
@@ -286,7 +290,9 @@ MAIN CONTENT
   margin-bottom: 0;
 }
 
-
+.center {
+  text-align: center;
+}
 
 
 /* ---------------------
@@ -400,7 +406,7 @@ FOOTER / SALES PITCH
 
 .barchart{
   max-width: 500px !important;
-  /*max-height: 350px !important;*/
+  margin-bottom: 1em;
 }
 .piechart{
   /*width: 400px;
@@ -443,13 +449,8 @@ MOBILE
     padding: 2em 0;
   }
 
-  .big-number {
+  span.big-number {
     font-size: 22px;
-    font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
-    font-weight: normal;
-    color: #77ad39;
-    line-height: 1.4;
-    padding-right: 0.1em;
   }
 
   .insight-box.stacked {
