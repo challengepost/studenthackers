@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/foundation.min.css">
   <!-- foundation: only loading the grid, magellan nav, and equalizer -->
   <link rel="stylesheet" href="css/bigfoot-number.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/2015styles.css">
   <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
   <script src="js/vendor/modernizr.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -1253,25 +1253,12 @@
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/foundation/foundation.equalizer.js"></script>
-  <script>
-    $(function() {
-      $(document).foundation();
-
-      $(document).foundation({
-        "magellan-expedition": {
-          active_class: 'active', // specify the class used for active sections
-          threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
-          destination_threshold: -150, // pixels from the top of destination for it to be considered active
-          throttle_delay: 50, // calculation throttling to increase framerate
-          fixed_top: 0, // top distance in pixels assigend to the fixed element on scroll
-          offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
-        }
-        });
-    });
-  </script>
-
   <script src="js/bigfoot.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    // initialize bigfoot for footnotes
+    $.bigfoot(); // for 2015 report.
+  </script>
 
   <!-- Twitter web conversion tracking code-->
   <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
