@@ -182,21 +182,21 @@ var raiseChart = new Chart(ch2, {
 /* EQUITY CHART */
 var equityData = {
     labels: [
-        "Kinda",
         "Very",
+        "Kinda",
         "Not important"
     ],
     datasets: [
         {
-            data: [133, 74, 21],
+            data: [74, 133, 21],
             backgroundColor: [
+                "#77ad39",
                 "#ffc247",
-                "#e64051",
                 "#2d93b2"
             ],
             hoverBackgroundColor: [
+                "#77ad39",
                 "#ffc247",
-                "#e64051",
                 "#2d93b2"
             ]
         }]
