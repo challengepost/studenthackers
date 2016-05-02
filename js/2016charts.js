@@ -1,3 +1,15 @@
+// GA LINK CLICKY STUFF
+var teamsButton = function(button) {
+   ga('send', 'event', 'teamsButton', 'click', button, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = "http://devpost.com/teams";}
+   });
+}
+
+//onclick="teamsButton('leftRail')"
+//onclick="teamsButton('endReport')"
+
+
 // CHART.JS STUFF
 
 var ch1 = document.getElementById("salary_chart");
