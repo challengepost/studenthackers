@@ -64,7 +64,8 @@ var salaryOptions = {
   scales: {
     yAxes: [{
       scaleLabel: {
-
+        display: true,
+        labelString: "Percentage"
       },
       ticks: {
         beginAtZero:true
@@ -120,7 +121,8 @@ var peopleOptions = {
   scales: {
     yAxes: [{
       scaleLabel: {
-
+        display: true,
+        labelString: "Percentage"
       },
       ticks: {
         beginAtZero:true
