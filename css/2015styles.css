@@ -63,6 +63,7 @@ a.share-button:hover{
   background-color: #268899;
 }
 
+
 /* ---------------------
 TYPOGRAPHY
 --------------------- */
@@ -70,12 +71,11 @@ TYPOGRAPHY
 body {
   font-family: 'Helvetica Neue', sans-serif;
   color: #575553;
-  font-size: 1.125em;
-  line-height: 1.945; /* don't judge me */
+  line-height: 1.5625;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
+  font-family: 'ClearSans-Bold', â€™HelveticaNeue-Boldâ€™, 'Helvetica Neue Bold', sans-serif;
   font-weight: normal;
   color: #003e54;
   line-height: 1.4;
@@ -84,12 +84,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.375em; /*38px*/
   padding-bottom: 0.3em;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 1.875em; /*30px*/
   padding: 1em 0 0.5em 0;
 }
 
@@ -98,8 +98,8 @@ h2:first-of-type {
 }
 
 h3 {
-  font-size: 24px;
-  margin-bottom: 0.75em;
+  font-size: 1.375em; /*22px*/
+  margin-bottom: 0.3em;
   margin-top: 2em;
 }
 
@@ -109,56 +109,18 @@ h3.border {
 }
 
 h4 {
-  font-size: 18px;
-  margin-bottom: 0.75em;
-}
-
-h4 span.small {
-  font-family: 'Helvetica Neue', sans-serif;
-  color: #575553;
-  font-size: 14px;
-  font-style: italic;
-}
-
-
-h5 {
-  font-size: 18px;
+  font-size: 1.125em; /*18px*/
   text-transform: uppercase;
   letter-spacing: 0.075em;
 }
 
+h5 {
+  font-size: 1.125em; /*18px*/
+}
+
 p, ol, ul {
-  margin: 0 0 1.125em 0;
-}
-
-ol, ul {
-  counter-reset: item;
-  padding: 0 0 0 0.2em;
-  margin-left: 1.25em;
-}
-
-ol li:before {
-  content: counter(item) ". ";
-  counter-increment: item;
-  color: #77ad39;
-  font-weight: bold;
-  margin-right: 0.2em;
-  margin-left: -1.35em;
-}
-
-ul li:before {
-  content: "● ";
-  counter-increment: item;
-  color: #77ad39;
-  font-weight: bold;
-  margin-right: 0.2em;
-  margin-left: -1.35em;
-}
-
-li {
-  margin-bottom: 0.5em;
-  color: #575553;
-  display: block;
+  font-size: 1em; /*16px*/
+  margin: 0 0 1em 0;
 }
 
 a {
@@ -177,36 +139,6 @@ a:active, a:hover {
 .no-margin-top {
   margin-top: 0;
 }
-
-strong{
-  color: #003e54;
-}
-
-.percent-rank p{
-  margin-bottom: 0.5em;
-}
-
-.percent-rank p strong{
-  margin-right: .25em;
-  color: #77ad39;
-}
-
-
-span.big-number {
-  font-size: 32px;
-  font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
-  font-weight: normal;
-  color: #77ad39;
-  line-height: 1.25;
-  padding-right: 0.1em;
-}
-
-span.big-number.padding-both-sides {
-    padding: 0 0.1em 0 0.1em;
-  }
-
-
-
 
 /* ---------------------
 HEADER
@@ -237,62 +169,6 @@ HEADER
 
 a.logo {
   border-bottom: none;
-}
-
-
-/* ---------------------
-MAIN CONTENT
---------------------- */
-
-.content {
-  padding: 3em 0 0;
-}
-
-.cta-button{
-  margin-bottom: 1.75em;
-}
-
-.bottom {
-  margin-bottom:0;
-}
-
-.insight-box {
-  border: 3px solid #e6e6e6;
-  padding: 2em;
-  margin-bottom: 2em;
-}
-
-.insight-box p:last-of-type {
-  margin-bottom: 0;
-}
-
-.insight-box p.icon {
-  margin-bottom: 1.5em;
-  text-align: center;
-}
-
-.insight-box p.icon img {
-  height: 50px;
-}
-
-.insight-box.stacked {
-  margin-bottom: 0;
-}
-
-.data-group {
-  background-color: /*#e5fbff*/ #f2f2f2;
-  padding: 1.125em;
-  margin: 0 0 1.125em 0;
-}
-
-.data-group ol,
-.data-group ul,
-.data-group li:last-of-type {
-  margin-bottom: 0;
-}
-
-.center {
-  text-align: center;
 }
 
 
@@ -339,14 +215,14 @@ SIDE NAV
 }
 
 a.hiring-button {
-  font-family: 'ClearSans-Bold', ’HelveticaNeue-Bold’, 'Helvetica Neue Bold', sans-serif;
+  font-family: 'ClearSans-Bold', â€™HelveticaNeue-Boldâ€™, 'Helvetica Neue Bold', sans-serif;
   color: white;
   background: #2d9eb2;
   border-color: #237a89;
   border-style: solid;
-  border-width: 0 0 3px;
-  font-size: 16px;
-  padding: 0.5em 1.25em;
+  border-width: 0 0 2px;
+  font-size: 14px;
+  padding: 0.5em 1em;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   display: inline-block;
@@ -377,6 +253,62 @@ a.hiring-button:active {
 
 
 
+/* ---------------------
+MAIN CONTENT
+--------------------- */
+
+.content {
+  padding: 3em 0;
+}
+
+.insight-box {
+  border: 3px solid #e6e6e6;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.insight-box p:last-of-type {
+  margin-bottom: 0;
+}
+
+.insight-box p.icon {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.insight-box p.icon img {
+  height: 50px;
+}
+
+.insight-box.stacked {
+  margin-bottom: 0;
+}
+
+/* ---------------------
+TABLES
+--------------------- */
+
+table {
+  text-align: left;
+  width: 100%
+}
+
+thead {
+  color: #1a1918;
+  font-weight: bold;
+}
+
+thead th {
+  border-bottom: 3px solid #e6e6e6;
+}
+
+td, th {
+  padding: 0.4em 0;
+}
+
+td.number {
+  width: 12%;
+}
 
 
 /* ---------------------
@@ -403,15 +335,6 @@ FOOTER / SALES PITCH
 .footer-interior a:hover {
   color: white;
   border-bottom: 1px dotted white;
-}
-
-.barchart{
-  max-width: 500px !important;
-  margin-bottom: 1em;
-}
-.piechart{
-  /*width: 400px;
-  height: 300px;*/
 }
 
 
@@ -464,15 +387,6 @@ MOBILE
 
   .footer-interior {
     padding: 1em;
-  }
-
-  .barchart{
-    width: 400px;
-    height: 250px;
-  }
-  .piechart{
-    width: 300px;
-    height: 200px;
   }
 
 }

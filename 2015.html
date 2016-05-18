@@ -1,0 +1,1277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Devpost Student Hacker Report (2014-15)</title>
+  <meta name="description" content="Devpost's Student Hacker Report (2014-15). We looked at project tags from a sample of 13,281 student hackers who participated in 160 student hackathons and submitted 9,898 projects, either in hackathons or on their Devpost portfolios.">
+  <meta name="author" content="Devpost">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Twitter card-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@devpost">
+  <meta name="twitter:creator" content="@devpost">
+  <meta name="twitter:title" content="Devpost Student Hacker Report">
+  <meta name="twitter:description" content="We ranked the APIs, languages, and technologies that student hackers used during the 2014-2015 academic year.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/nealrs/studenthackers/gh-pages/img/devpost_report.png">
+
+  <!-- Facebook OGP tags -->
+  <meta property="og:url" content="http://studenthackers.devpost.com/2015.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Devpost Student Hacker Report" />
+  <meta property="og:description" content="We ranked the APIs, languages, and technologies that student hackers used during the 2014-2015 academic year." />
+  <meta property="og:image"              content="https://raw.githubusercontent.com/nealrs/studenthackers/gh-pages/img/devpost_report.png" />
+
+  <!-- CSS & JS bro-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <!-- foundation: only loading the grid, magellan nav, and equalizer -->
+  <link rel="stylesheet" href="css/bigfoot-number.css">
+  <link rel="stylesheet" href="css/2015styles.css">
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="js/vendor/modernizr.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Google Analytics-->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-2233558-31', 'auto');
+   ga('send', 'pageview');
+
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <section class="header">
+    <div class="row">
+      <div class="large-12 columns">
+        <a href="http://devpost.com" class="logo"><img src="img/devpost-reversed-rgb.svg"></a>
+        <h1>Student Hacker Report</h1>
+        <h2>Technology &amp; API rankings for the 2014&ndash;2015 academic year</h2>
+
+        <!-- SOCIAL BUTTONS -->
+        <p><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%3A35729%2F2015.html&ref_src=twsrc%5Etfw&text=The%20most%20popular%20APIs%20and%20tech%20at%20college%20%23hackathons&tw_p=tweetbutton&url=http%3A%2F%2Fstudenthackers.devpost.com/2015.html&via=Devpost" class="share-button twitter"><i class="fa fa-fw fa-twitter fa-lg" aria-hidden="true"></i> Tweet</a>&nbsp;&nbsp;<a href="https://news.ycombinator.com/item?id=9961413" class="share-button hn"><i class="fa fa-fw fa-y-combinator fa-lg" aria-hidden="true"></i> Discuss</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//studenthackers.devpost.com/2015.html&title=Devpost's%20Student%20Hacker%20Report%20(2014-2015)&summary=In%20our%20debut%20rankings%20report,%20we've%20ranked%20the%20technologies%20%26%20APIs%20which%20student%20hackers%20used%20most%20throughout%20the%202014-2015%20academic%20year.&source=Devpost" class="share-button linkedin"><i class="fa fa-fw fa-linkedin-square fa-lg" aria-hidden="true"></i>Share</a></p>
+
+        <!-- 2016 report -->
+        <p><a href="http://studenthackers.devpost.com" class="share-button new-report" >Read our 2016 Student Hacker Report</a></p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="content">
+    <div class="row">
+
+      <div class="large-3 columns show-for-large-up">
+        <div data-magellan-expedition="fixed">
+          <dl class="sub-nav">
+            <dd data-magellan-arrival="about"><a href="#about">About Devpost</a></dd>
+            <dd data-magellan-arrival="students"><a href="#students">Student hackers</a></dd>
+            <dd data-magellan-arrival="method"><a href="#method">Ranking methodology</a></dd>
+            <dd data-magellan-arrival="rankings"><a href="#rankings">Technology &amp; API rankings</a>
+            <dd data-magellan-arrival="insights"><a href="#insights">Insights</a>
+            <dd data-magellan-arrival="forward"><a href="#forward">Looking forward</a></dd>
+          </dl>
+
+          <div class="contact">
+            <p>To learn what hackers are doing with your technology and drive more engagement, contact us at <a href="mailto:post@devpost.com">post@devpost.com</a> or <a href="tel:+12126756164">212-675-6164</a> for a demo of our new organization tools.</p>
+          </div>
+
+          <a href="http://info.devpost.com/jobs" class="hiring-button" target="_blank">Devpost is hiring!</a>
+
+        </div>
+      </div> <!-- end left sidenav column (large-3) -->
+
+      <div class="large-9 columns">
+
+        <h2 data-magellan-destination="about">About Devpost</h2>
+        <a name="about"></a>
+
+        <p><a href="http://devpost.com">Devpost</a> (<a href="http://blog.devpost.com/post/125253916364/challengepost-is-now-devpost">formerly ChallengePost</a>) is the home for hackers &mdash; a community where developers can share their software projects, build their portfolios, and compete in online and in-person hackathons.</p>
+
+        <p>In our debut rankings report, we've ranked the technologies which student hackers used most throughout the 2014-2015 academic year.</p>
+
+
+
+
+        <h2 data-magellan-destination="students">Student hackers</h2>
+        <a name="students"></a>
+
+        <p>Devpost's digital infrastructure is used at student hackathons around the world and leading engineering schools in the U.S.<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> As a result, student hackers have a big presence in our community. Whether in high school or college, novice or veteran, they are at the forefront of software (and often hardware) innovation, showing equal interest in both academic and consumer oriented endeavors.</p>
+
+        <p><em>N.B.</em> We define hackers as software developers who are <a href="https://en.wikipedia.org/wiki/Hacker_(programmer_subculture)">experimenters, tinkerers, and lifelong learners</a>, not the malicious actors responsible for data breaches, theft, and similar unsavory behavior.</p>
+
+
+        <h2 data-magellan-destination="method">Ranking methodology</h2>
+        <a name="method"></a>
+
+        <p>During hackathons and within their portfolios, we encourage hackers to tag the platforms, technologies, languages, and APIs they use. This helps us capture a lot of data on the developer community.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></p>
+
+        <p>We looked at project tags from a sample of 13,281 student hackers who participated in 160 student hackathons and submitted 9,898 projects, either in hackathons or on their Devpost portfolios.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+
+        <p>The technologies tagged in student projects include languages, communications APIs, social APIs, payment APIs, geo APIs, music APIs, application frameworks, databases, frontend frameworks, game engines, IDEs, libraries, backend as a service (BaaS), platform as a service (PaaS), infrastructure as a Service (IaaS), protocols, text editors, hardware, and more. For each ranking category, we report the top 5 tags.<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
+
+
+
+        <h2 data-magellan-destination="rankings">Technology &amp; API rankings</h2>
+        <a name="rankings"></a>
+
+        <h3 class="no-margin-top">Mobile platforms</h3>
+
+        <p>% of users who said they like to hack on a given platform:</p>
+
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <table>
+              <thead>
+                <tr>
+                  <th>Platform</th>
+                  <th>% of total users</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://devpost.com/software/built-with/android" target="_blank">Android</a></td>
+                  <td>38.2</td>
+                </tr>
+                <tr>
+                  <td><a href="http://devpost.com/software/built-with/ios" target="_blank">iOS</a></td>
+                  <td>22.7</td>
+                </tr>
+                <tr>
+                  <td><a href="http://devpost.com/software/built-with/windows-phone" target="_blank">Windows Phone</a></td>
+                  <td>4.9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h3 class="border">Programming languages</h3>
+
+        <div class="row">
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/css" target="_blank">HTML/CSS</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/javascript" target="_blank">JavaScript</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/python" target="_blank">Python</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/java" target="_blank">Java</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/c--3" target="_blank">C/C++</a></td>
+                </tr>
+                <tr>
+                  <td class="number">6</td>
+                  <td><a href="http://devpost.com/software/built-with/php" target="_blank">PHP</a></td>
+                </tr>
+                <tr>
+                  <td class="number">7</td>
+                  <td><a href="http://devpost.com/software/built-with/objective-c" target="_blank">Objective-C</a></td>
+                </tr>
+                <tr>
+                  <td class="number">8</td>
+                  <td><a href="http://devpost.com/software/built-with/c--2" target="_blank">C#</a></td>
+                </tr>
+                <tr>
+                  <td class="number">9</td>
+                  <td><a href="http://devpost.com/software/built-with/swift" target="_blank">Swift</a></td>
+                </tr>
+                <tr>
+                  <td class="number">10</td>
+                  <td><a href="http://devpost.com/software/built-with/json" target="_blank">JSON</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">11</td>
+                  <td><a href="http://devpost.com/software/built-with/ruby" target="_blank">Ruby</a></td>
+                </tr>
+                <tr>
+                  <td class="number">12</td>
+                  <td><a href="http://devpost.com/software/built-with/xml" target="_blank">XML</a></td>
+                </tr>
+                <tr>
+                  <td class="number">13</td>
+                  <td><a href="http://devpost.com/software/built-with/ajax" target="_blank">Ajax</a></td>
+                </tr>
+                <tr>
+                  <td class="number">14</td>
+                  <td><a href="http://devpost.com/software/built-with/shell" target="_blank">Shell</a></td>
+                </tr>
+                <tr>
+                  <td class="number">15</td>
+                  <td><a href="http://devpost.com/software/built-with/processing" target="_blank">Processing</a></td>
+                </tr>
+                <tr>
+                  <td class="number">16</td>
+                  <td><a href="http://devpost.com/software/built-with/lua" target="_blank">Lua</a></td>
+                </tr>
+                <tr>
+                  <td class="number">17</td>
+                  <td><a href="http://devpost.com/software/built-with/coffeescript" target="_blank">CoffeeScript</a></td>
+                </tr>
+                <tr>
+                  <td class="number">18</td>
+                  <td><a href="http://devpost.com/software/built-with/go" target="_blank">Go</a></td>
+                </tr>
+                <tr>
+                  <td class="number">19</td>
+                  <td><a href="http://devpost.com/software/built-with/matlab" target="_blank">MATLAB</a></td>
+                </tr>
+                <tr>
+                  <td class="number">20</td>
+                  <td><a href="http://devpost.com/software/built-with/opengl" target="_blank">OpenGL</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">21</td>
+                  <td><a href="http://devpost.com/software/built-with/r" target="_blank">R</a></td>
+                </tr>
+                <tr>
+                  <td class="number">22</td>
+                  <td><a href="http://devpost.com/software/built-with/groovy" target="_blank">Groovy</a></td>
+                </tr>
+                <tr>
+                  <td class="number">23</td>
+                  <td><a href="http://devpost.com/software/built-with/xaml" target="_blank">XAML</a></td>
+                </tr>
+                <tr>
+                  <td class="number">24</td>
+                  <td><a href="http://devpost.com/software/built-with/perl" target="_blank">Perl</a></td>
+                </tr>
+                <tr>
+                  <td class="number">25</td>
+                  <td><a href="http://devpost.com/software/built-with/webgl" target="_blank">WebGL</a></td>
+                </tr>
+                <tr>
+                  <td class="number">26</td>
+                  <td><a href="http://devpost.com/software/built-with/applescript" target="_blank">Applescript</a></td>
+                </tr>
+                <tr>
+                  <td class="number">27</td>
+                  <td><a href="http://devpost.com/software/built-with/scala" target="_blank">Scala</a></td>
+                </tr>
+                <tr>
+                  <td class="number">28</td>
+                  <td><a href="http://devpost.com/software/built-with/glsl" target="_blank">GLSL</a></td> <!-- tag not on-->
+                </tr>
+                <tr>
+                  <td class="number">29</td>
+                  <td><a href="http://devpost.com/software/built-with/jsp" target="_blank">JSP</a></td>
+                </tr>
+                <tr>
+                  <td class="number">30</td>
+                  <td><a href="http://devpost.com/software/built-with/latex" target="_blank">LaTeX</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Communications APIs</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/twilio" target="_blank">Twilio</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/yo" target="_blank">Yo</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/sendgrid" target="_blank">SendGrid</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/moxtra" target="_blank">Moxtra</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/mailjet" target="_blank">Mailjet</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Social APIs</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/facebook" target="_blank">Facebook</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/twitter" target="_blank">Twitter</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/reddit" target="_blank">Reddit</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/instagram" target="_blank">Instagram</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/google" target="_blank">Google+</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Payment APIs</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/venmo" target="_blank">Venmo</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/paypal" target="_blank">Paypal</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/stripe" target="_blank">Stripe</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/braintree" target="_blank">Braintree</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/blockchain" target="_blank">Blockchain</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Geo APIs</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/google-maps" target="_blank">Google Maps</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/yelp" target="_blank">Yelp</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/google-places" target="_blank">Google Places</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/esri" target="_blank">Esri ArcGIS</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/mapbox" target="_blank">Mapbox</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Music APIs</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/spotify" target="_blank">Spotify</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/echo-nest" target="_blank">Echo Nest</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/soundcloud" target="_blank">SoundCloud</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/google-play" target="_blank">Google Play</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/rdio" target="_blank">Rdio</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">App frameworks</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/node-js" target="_blank">Node.js</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/flask" target="_blank">Flask</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/angular-js" target="_blank">AngularJS</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/ruby-on-rails" target="_blank">Ruby on Rails</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/django" target="_blank">Django</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row">
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Databases</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/mongodb" target="_blank">MongoDB</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/mysql" target="_blank">MySQL</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/sqlite" target="_blank">SQLite</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/postgresql" target="_blank">PostgreSQL</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/foundationdb" target="_blank">FoundationDB</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">iOS frameworks</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/core-location" target="_blank">Core Location</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/mapkit" target="_blank">Mapkit</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/uikit" target="_blank">UIkit</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/core-data" target="_blank">Core Data</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/avfoundation" target="_blank">AV Foundation</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Game engines</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/unity" target="_blank">Unity</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/pygame" target="_blank">Pygame</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/libgdx" target="_blank">libGDX</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/gamemaker" target="_blank">GameMaker</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/unreal-engine" target="_blank">Unreal Engine</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row">
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">IDEs</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/android-studio" target="_blank">Android Studio</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/xcode" target="_blank">Xcode</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/eclipse" target="_blank">Eclipse</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/visual-studio" target="_blank">Visual Studio</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/jade" target="_blank">Jade</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Libraries</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/jquery" target="_blank">jQuery</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/express-js" target="_blank">Express.js</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/socket-io" target="_blank">Socket.io</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/opencv" target="_blank">OpenCV</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/d3-js" target="_blank">D3.js</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">BaaS</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/parse" target="_blank">Parse</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/firebase" target="_blank">Firebase</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/meteor-js" target="_blank">Meteor.js</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/mongolab" target="_blank">MongoLab</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/amazon-rds-relational-database-service" target="_blank">Amazon RDS</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row">
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">PaaS &amp; IaaS (top 10)<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/azure" target="_blank">Azure</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/heroku" target="_blank">Heroku</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/amazon-web-services" target="_blank">Amazon Web Services</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/digitalocean" target="_blank">DigitalOcean</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/bluemix" target="_blank">IBM Bluemix</a></td>
+                </tr>
+                <tr>
+                  <td class="number">6</td>
+                  <td><a href="http://devpost.com/software/built-with/google-app-engine" target="_blank">Google App Engine</a></td>
+                </tr>
+                <tr>
+                  <td class="number">7</td>
+                  <td><a href="http://devpost.com/software/built-with/linode" target="_blank">Linode</a></td>
+                </tr>
+                <tr>
+                  <td class="number">8</td>
+                  <td><a href="http://devpost.com/software/built-with/atlantic-net-cloud-servers" target="_blank">Atlantic.Net</a></td>
+                </tr>
+                <tr>
+                  <td class="number">9</td>
+                  <td><a href="http://devpost.com/software/built-with/openshift" target="_blank">OpenShift</a></td>
+                </tr>
+                <tr>
+                  <td class="number">10</td>
+                  <td><a href="http://devpost.com/software/built-with/rackspace" target="_blank">Rackspace</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Command line utilities</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/curl" target="_blank">cURL</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/makefile" target="_blank">Makefile</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/gradle" target="_blank">Gradle</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/yeoman" target="_blank">Yeoman</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/ngrok" target="_blank">ngrok</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <h3 class="border">Text editors</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/sublime-text" target="_blank">Sublime Text</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/vim" target="_blank">Vim</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/notepad" target="_blank">Notepad++</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/brackets" target="_blank">Brackets</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/atom" target="_blank">Atom</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="large-12 columns">
+            <h3 class="border">Hardware</h3>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row">
+
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">1</td>
+                  <td><a href="http://devpost.com/software/built-with/arduino" target="_blank">Arduino</a></td>
+                </tr>
+                <tr>
+                  <td class="number">2</td>
+                  <td><a href="http://devpost.com/software/built-with/myo" target="_blank">Myo</a></td>
+                </tr>
+                <tr>
+                  <td class="number">3</td>
+                  <td><a href="http://devpost.com/software/built-with/pebble" target="_blank">Pebble</a></td>
+                </tr>
+                <tr>
+                  <td class="number">4</td>
+                  <td><a href="http://devpost.com/software/built-with/leap-motion" target="_blank">Leap Motion</a></td>
+                </tr>
+                <tr>
+                  <td class="number">5</td>
+                  <td><a href="http://devpost.com/software/built-with/oculus" target="_blank">Oculus Rift</a></td>
+                </tr>
+                <tr>
+                  <td class="number">6</td>
+                  <td><a href="http://devpost.com/software/built-with/raspberry-pi" target="_blank">Raspberry Pi</a></td>
+                </tr>
+                <tr>
+                  <td class="number">7</td>
+                  <td><a href="http://devpost.com/software/built-with/intel-edison" target="_blank">Intel Edison</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">8</td>
+                  <td><a href="http://devpost.com/software/built-with/kinect" target="_blank">Kinect</a></td>
+                </tr>
+                <tr>
+                  <td class="number">9</td>
+                  <td><a href="http://devpost.com/software/built-with/particle" target="_blank">Particle (formerly Spark)</a></td>
+                </tr
+                <tr>
+                  <td class="number">10</td>
+                  <td><a href="http://devpost.com/software/built-with/google-cardboard" target="_blank">Google Cardboard</a></td>
+                </tr>
+                <tr>
+                  <td class="number">11</td>
+                  <td><a href="http://devpost.com/software/built-with/gps" target="_blank">GPS</a></td>
+                </tr>
+                <tr>
+                  <td class="number">12</td>
+                  <td><a href="http://devpost.com/software/built-with/servo" target="_blank">Servo</a></td>
+                </tr>
+                <tr>
+                  <td class="number">13</td>
+                  <td><a href="http://devpost.com/software/built-with/3dprinting" target="_blank">3D Printing</a></td>
+                </tr>
+                <tr>
+                  <td class="number">14</td>
+                  <td><a href="http://devpost.com/software/built-with/android-wear" target="_blank">Android Wear</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="number">15</td>
+                  <td><a href="http://devpost.com/software/built-with/meta" target="_blank">Meta (smart glasses)</a></td>
+                </tr>
+                <tr>
+                  <td class="number">16</td>
+                  <td><a href="http://devpost.com/software/built-with/google-glass" target="_blank">Google Glass</a></td>
+                </tr>
+                <tr>
+                  <td class="number">17</td>
+                  <td><a href="http://devpost.com/software/built-with/accelerometer" target="_blank">Accelerometer</a></td>
+                </tr>
+                <tr>
+                  <td class="number">18</td>
+                  <td><a href="http://devpost.com/software/built-with/tessel" target="_blank">Tessel</a></td>
+                </tr>
+                <tr>
+                  <td class="number">19</td>
+                  <td><a href="http://devpost.com/software/built-with/muse" target="_blank">Muse (headband)</a></td>
+                </tr>
+                <tr>
+                  <td class="number">20</td>
+                  <td><a href="http://devpost.com/software/built-with/intel-galileo" target="_blank">Intel Galileo</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="large-12 columns">
+            <h3 class="border">Miscellaneous APIs &amp; tech</h3>
+            <p>Not all of the tags used by student hackers fit in a particular category or have many peers. Here are a few more technologies that were tagged in multiple hacks:</p>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row">
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+
+              	<tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/alchemyapi" target="_blank">AlchemyAPI</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/autodesk" target="_blank">Autodesk</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/bitcoin" target="_blank">Bitcoin</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/bloomberg" target="_blank">Bloomberg</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/canvas" target="_blank">Canvas</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/capital-one" target="_blank">Capital One</a></td>
+                </tr>
+              	<tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/docker" target="_blank">Docker</a></td>
+                </tr>
+              	<tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/dropbox" target="_blank">Dropbox</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/eventbrite" target="_blank">Eventbrite</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/evernote" target="_blank">Evernote</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/face" target="_blank">Face++</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/giphy" target="_blank">Giphy</a></td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+              	<tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/ibm-watson" target="_blank">IBM Watson</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/indico" target="_blank">Indico</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/kimono" target="_blank">Kimono</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/machine-learning" target="_blank">Machine Learning</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/maya" target="_blank">Maya</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/metamind" target="_blank">MetaMind</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/mojio" target="_blank">Mojio</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/nginx" target="_blank">Nginx</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/ocr" target="_blank">OCR</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/ordr-in" target="_blank">Ordr.in</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/postmates" target="_blank">Postmates</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/priceline-api" target="_blank">Priceline API</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="large-4 medium-4 columns">
+            <table>
+              <tbody>
+
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/vuforia" target="_blank">Qualcomm Vuforia</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/rhine" target="_blank">Rhine</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/sabre" target="_blank">Sabre</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/selenium" target="_blank">Selenium</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/solidworks" target="_blank">SolidWorks</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/tomcat" target="_blank">Tomcat</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/tripadvisor" target="_blank">TripAdvisor</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/uber" target="_blank">Uber</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/weather-underground" target="_blank">Weather Underground</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/wit-ai" target="_blank">Wit.ai</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/wolfram-technologies" target="_blank">Wolfram Technologies</a></td>
+                </tr>
+                <tr>
+                  <td class="number">&bull;</td>
+                  <td><a href="http://devpost.com/software/built-with/ziggeo" target="_blank">Ziggeo</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> <!-- end row -->
+
+
+        <h2 data-magellan-destination="insights">Insights</h2>
+        <a name="insights"></a>
+
+        <div class="row" data-equalizer>
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-frontend.svg"></p>
+              <p>Most of the projects entered by our sample of student hackers include front-end web or mobile development and our language rankings reflect this. With only 24&ndash;48 hours at most hackathons, student lean toward API driven web &amp; mobile projects.</p>
+            </div>
+          </div>
+
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-android.svg"></p>
+              <p>It’s a little surprising to see Android place so solidly ahead of iOS, but the free-to-publish model gives it an edge with students working on weekend hacks.<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row" data-equalizer>
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-node.svg"></p>
+              <p>Although it’s the basis for many inside jokes within the student community, the rankings show that Node.js was extremely popular during the 2014&ndash;2015 academic year. <em>(But we still can’t endorse it as &lsquo;the only real dev language&rsquo;</em>)</p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-brackets.svg"></p>
+              <p>CSS, Objective-C, Swift, and Lua rank relatively high on Devpost, given their use in web, iOS, and game development, respectively. Languages such as C++, R, Perl, and Scala, are more common in enterprise, back-end applications, and data/statistical analysis, all of which are less common at hackathons and in student projects.<sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup></p>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row" data-equalizer>
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-VR.svg"></p>
+              <p>Hardware was hugely popular in 2014&ndash;2015 among hackers and judges. 10% of prize winning projects were tagged “hardware,” 8.2% Arduino, 5.3% Pebble, 4.8% Leap Motion, 4.5% Myo, and 3.9% Oculus. Each of these hardware tags showed up in a higher percentage of winning hacks than non-winning hacks.</p>
+              <p>During the spring semester, Pebble, Oculus, Leap Motion, Intel Edison, Raspberry Pi, Muse, and Meta grew in popularity, likely due to company sponsorship.</p>
+            </div>
+          </div>
+
+          <div class="large-6 medium-6 columns" data-equalizer-watch>
+            <div class="insight-box" >
+              <p class="icon"><img src="img/icon-database.svg"></p>
+              <p>Despite the recent explosion of interest in NoSQL data stores (e.g. MongoDB &amp; Redis), relational databases remain quite popular.</p>
+            </div>
+
+            <div class="insight-box stacked">
+              <p class="icon"><img src="img/icon-frontend-toolkit.svg"></p>
+              <p>Bootstrap and similar front-end toolkits rank highly among new students, while tools like Sass &amp; Less offer fine-grained control and design for more sophisticated hackers. </p>
+            </div>
+          </div>
+
+        </div><!-- end row -->
+
+
+        <div class="row" data-equalizer>
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-xaas.svg"></p>
+              <p>The Paas/IaaS space is increasingly competitive, and hackers have more options than ever when it comes to devops. Since the XaaS model tends toward commoditization, both leaders &amp; new entrants will need to offer more personalized support to differentiate themselves.</p>
+            </div>
+          </div>
+
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-growth.svg"></p>
+              <p>Tags that saw big growth in the second half of the academic year included Unity, Intel Edison, Bootstrap, Meteor.js, Flask, OpenCV, Jade, DigitalOcean, Ionic, Wolfram Technologies, Linode, Postmates, Capital One, Blender, Swift, and SQLite.</p>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row" data-equalizer>
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-trophy.svg"></p>
+              <p>The impact of hackathon sponsorship is clear: if you show up and participate, hackers will use your technology. We looked at the 20 companies that sponsored two or more student hackathons in 2014 and had 50 or more overall projects tagged with their technologies. 19 of those companies had a higher prevalence of tags when they sponsored, including 11 that were tagged more than twice as often when they sponsored.  Sponsorship had impact for companies tagged less overall, and for companies with massive penetration and mindshare.</p>
+            </div>
+          </div>
+
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-pizza.svg"></p>
+              <p>Hackers also expressed their sense of humor through tags. Love was tagged consistently throughout the year, but we’re unsure how much of that was love and how much was LÖVE, the 2d game engine. Coffee and Red Bull were dead even, but pizza beat out guacamole. There was more blood and sweat in the Spring than in the Fall, but tears were steady throughout the academic year.</p>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+
+        <h2 data-magellan-destination="forward">Looking forward</h2>
+        <a name="forward"></a>
+        <p>This report is our first attempt to highlight the popularity of technologies and APIs for organizations targeting developers. Since technology is inherently imitable and tends toward commoditization, it's crucial to understand the developer Zeitgeist. Today's students are <span style="text-decoration: line-through;">tomorrow's</span> already founders, CEOs, and decision makers.</p>
+
+        <p>Devpost will continue to publish rankings periodically and encourage hackers to tag the technologies, APIs, and tools they use &mdash; but ultimately, organizations must invest in their developer networks to capture and maintain market share.</p>
+
+        <p>For those interested in reaching more student hackers and growing their developer networks, (AKA <em>developer evangelism</em>), here are four tactics to consider:</p>
+
+        <div class="row" data-equalizer>
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-mentor.svg"></p>
+              <p>Sponsor hackathons, but don’t just write a check. It’s more effective to send developer evangelists who can work on-site with hackers.</p>
+            </div>
+          </div>
+
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-promote.svg"></p>
+              <p>Promote your tag gallery on Devpost. All of the tags above link to a corresponding project gallery. Encourage hackers to feature their projects there and engage with your community.</p>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row" data-equalizer>
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-hackathon.svg"></p>
+              <p>Organize your own hackathon focused on your technology and post the event and submissions on Devpost. We’ll tell our entire community about it &amp; it’s free.</p>
+            </div>
+          </div>
+
+          <div class="large-6 medium-6 columns">
+            <div class="insight-box" data-equalizer-watch>
+              <p class="icon"><img src="img/icon-globe.svg"></p>
+              <p>Run a 3&ndash;4 month online hackathon with us open to developers around the world. The extended timeframe will lead to more diverse and more polished projects using your technology.</p>
+            </div>
+          </div>
+
+        </div> <!-- end row -->
+
+        <div class="row footer hide-for-large-up">
+          <div class="large-12 columns">
+            <div class="footer-interior">
+              <p>To learn what hackers are doing with your technology and drive more engagement, contact us at <a href="mailto:post@devpost.com">post@devpost.com</a> or <a href="tel:+12126756164">212-675-6164</a> for a demo of our new organization tools.</p>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+      <!-- Disqus! -->
+      <!--<div class="row">
+
+        <div class="large-12 columns">
+    		  <div id="disqus_thread"></div>
+    			<script type="text/javascript">
+    				/* * * CONFIGURATION VARIABLES * * */
+    				var disqus_shortname = 'devpoststudenthackerreport';
+    				/* * * DON'T EDIT BELOW THIS LINE * * */
+    				(function() {
+    					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    				})();
+    			</script>
+    			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    		</div>
+
+      </div>--> <!-- end row -->
+
+        <div class="footnotes">
+          <ol>
+            <li class="footnote" id="fn:1">
+              <p>We’ve powered hackathons at 18 of the top 20 engineering schools, as ranked by <em>U.S. News and World Report</em> in 2014.<a href="#fnref:1" title="return to article"> ↩</a><p>
+            </li>
+
+            <li class="footnote" id="fn:2">
+              <p>When submitting software, we ask "Which tools and resources did you use?" and instruct hackers to "Tag languages, APIs, hardware, hosts, libraries, UI Kits, and frameworks – even Pokémon if it fits!" Hackers are not always exhaustive when tagging though, so actual percentages may be higher.<a href="#fnref:2" title="return to article"> ↩</a><p>
+            </li>
+            <li class="footnote" id="fn:3">
+              <p>The sample hackathons were mostly in the United States, but also included events in Canada, Mexico, the U.K., Spain, Poland, the Republic of Georgia, and Singapore. Many of the sampled hackathons were supported by our friends at <a href="https://mlh.io/">Major League Hacking</a>.<a href="#fnref:3" title="return to article"> ↩</a><p>
+            </li>
+
+            <li class="footnote" id="fn:4">
+              <p>In most cases the top 5, except for a few like languages and hardware, which merit extended rankings.<a href="#fnref:4" title="return to article"> ↩</a><p>
+            </li>
+
+            <li class="footnote" id="fn:5">
+              <p>The line between PaaS &amp; IaaS is blurry and user tags are not always specific enough to make a distinction. So, we offer a combined ranking of PaaS and IaaS technologies.</p>
+              <p>We attribute Azure's popularity to Microsoft's strong sponsorship campaign throughout the year.<a href="#fnref:5" title="return to article"> ↩</a><p>
+            </li>
+
+            <li class="footnote" id="fn:6">
+              <p>The mobile platform rankings are also consistent with other surveys of mind share. See, for example, VisionMobile’s Mobile Platform Mindshare rankings based on their survey of mobile app developers: <em>Developer Economics: State of the Developer Nation Q3 2014</em>.<a href="#fnref:6" title="return to article"> ↩</a><p>
+            </li>
+
+            <li class="footnote" id="fn:7">
+              <p>C++, R, Perl, and Scala all rank higher in rankings compiled by RedMonk based on combined Github / Stack Overflow rankings.  Our language rankings have a correlation coefficient of 0.65 with Redmonk’s combined rankings and favor languages used more in front-end web and mobile development (RedMonk found 0.76 correlation between the Github and Stack Overflow language rankings). See: <a href="http://redmonk.com/sogrady/2015/01/14/language-rankings-1-15">http://redmonk.com/sogrady/2015/01/14/language-rankings-1-15</a> <a href="#fnref:7" title="return to article"> ↩</a><p>
+            </li>
+          </ol>
+        </div>
+        <!-- end footnotes -->
+
+      </div> <!-- end right column (large-9) -->
+    </div> <!-- end row -->
+  </section>
+
+
+  <!-- JaVAVAVAVAVaScript -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.equalizer.js"></script>
+  <script src="js/bigfoot.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // initialize bigfoot for footnotes
+    $.bigfoot(); // for 2015 report.
+  </script>
+
+  <!-- Twitter web conversion tracking code-->
+  <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+  <script type="text/javascript">twttr.conversion.trackPid('l6iuj', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+  <noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6iuj&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+  <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6iuj&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+  </noscript>
+
+</body>
+</html>
+
+
+
+
+<!--<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>-->
