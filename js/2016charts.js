@@ -2,7 +2,7 @@
 var teamsButton = function(button) {
    ga('send', 'event', 'teamsButton', 'click', button, {
      'transport': 'beacon',
-     'hitCallback': function(){document.location = "http://devpost.com/teams";}
+     'hitCallback': function(){document.location = "https://devpost.com/jobs/hiring";}
    });
 }
 
